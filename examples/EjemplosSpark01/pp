@@ -1,0 +1,110 @@
+24/04/22 16:58:25 INFO SparkContext: Running Spark version 3.5.1
+24/04/22 16:58:25 INFO SparkContext: OS info Linux, 6.2.0-36-generic, amd64
+24/04/22 16:58:25 INFO SparkContext: Java version 11.0.20.1
+24/04/22 16:58:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/04/22 16:58:25 INFO ResourceUtils: ==============================================================
+24/04/22 16:58:25 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/04/22 16:58:25 INFO ResourceUtils: ==============================================================
+24/04/22 16:58:25 INFO SparkContext: Submitted application: Join app
+24/04/22 16:58:25 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/04/22 16:58:25 INFO ResourceProfile: Limiting resource is cpu
+24/04/22 16:58:25 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/04/22 16:58:25 INFO SecurityManager: Changing view acls to: alu0101056944
+24/04/22 16:58:25 INFO SecurityManager: Changing modify acls to: alu0101056944
+24/04/22 16:58:25 INFO SecurityManager: Changing view acls groups to: 
+24/04/22 16:58:25 INFO SecurityManager: Changing modify acls groups to: 
+24/04/22 16:58:25 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: alu0101056944; groups with view permissions: EMPTY; users with modify permissions: alu0101056944; groups with modify permissions: EMPTY
+24/04/22 16:58:25 INFO Utils: Successfully started service 'sparkDriver' on port 35289.
+24/04/22 16:58:25 INFO SparkEnv: Registering MapOutputTracker
+24/04/22 16:58:25 INFO SparkEnv: Registering BlockManagerMaster
+24/04/22 16:58:25 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/04/22 16:58:25 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/04/22 16:58:25 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/04/22 16:58:25 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-02a038fb-e2ea-4a65-86fd-4f951c6b69e6
+24/04/22 16:58:25 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+24/04/22 16:58:25 INFO SparkEnv: Registering OutputCommitCoordinator
+24/04/22 16:58:25 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/04/22 16:58:25 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/04/22 16:58:25 INFO Executor: Starting executor ID driver on host 10.209.31.71.local.ull.es
+24/04/22 16:58:25 INFO Executor: OS info Linux, 6.2.0-36-generic, amd64
+24/04/22 16:58:25 INFO Executor: Java version 11.0.20.1
+24/04/22 16:58:25 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/04/22 16:58:25 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@1e0f45c0 for default.
+24/04/22 16:58:25 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40217.
+24/04/22 16:58:25 INFO NettyBlockTransferService: Server created on 10.209.31.71.local.ull.es:40217
+24/04/22 16:58:25 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/04/22 16:58:25 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.209.31.71.local.ull.es, 40217, None)
+24/04/22 16:58:25 INFO BlockManagerMasterEndpoint: Registering block manager 10.209.31.71.local.ull.es:40217 with 434.4 MiB RAM, BlockManagerId(driver, 10.209.31.71.local.ull.es, 40217, None)
+24/04/22 16:58:25 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.209.31.71.local.ull.es, 40217, None)
+24/04/22 16:58:25 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.209.31.71.local.ull.es, 40217, None)
+24/04/22 16:58:26 INFO SparkContext: Starting job: collect at /home/alumnos.ull.es/c2/alu0101056944/datos/Disco_Duro_Virtual/private/EscritorioESIT/EjemplosSpark01/ej07_join.py:12
+24/04/22 16:58:26 INFO DAGScheduler: Registering RDD 6 (join at /home/alumnos.ull.es/c2/alu0101056944/datos/Disco_Duro_Virtual/private/EscritorioESIT/EjemplosSpark01/ej07_join.py:11) as input to shuffle 0
+24/04/22 16:58:26 INFO DAGScheduler: Got job 0 (collect at /home/alumnos.ull.es/c2/alu0101056944/datos/Disco_Duro_Virtual/private/EscritorioESIT/EjemplosSpark01/ej07_join.py:12) with 2 output partitions
+24/04/22 16:58:26 INFO DAGScheduler: Final stage: ResultStage 1 (collect at /home/alumnos.ull.es/c2/alu0101056944/datos/Disco_Duro_Virtual/private/EscritorioESIT/EjemplosSpark01/ej07_join.py:12)
+24/04/22 16:58:26 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+24/04/22 16:58:26 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+24/04/22 16:58:26 INFO DAGScheduler: Submitting ShuffleMapStage 0 (PairwiseRDD[6] at join at /home/alumnos.ull.es/c2/alu0101056944/datos/Disco_Duro_Virtual/private/EscritorioESIT/EjemplosSpark01/ej07_join.py:11), which has no missing parents
+24/04/22 16:58:26 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 13.1 KiB, free 434.4 MiB)
+24/04/22 16:58:26 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.9 KiB, free 434.4 MiB)
+24/04/22 16:58:26 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.209.31.71.local.ull.es:40217 (size: 6.9 KiB, free: 434.4 MiB)
+24/04/22 16:58:26 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+24/04/22 16:58:26 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (PairwiseRDD[6] at join at /home/alumnos.ull.es/c2/alu0101056944/datos/Disco_Duro_Virtual/private/EscritorioESIT/EjemplosSpark01/ej07_join.py:11) (first 15 tasks are for partitions Vector(0, 1))
+24/04/22 16:58:26 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks resource profile 0
+24/04/22 16:58:26 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (10.209.31.71.local.ull.es, executor driver, partition 0, PROCESS_LOCAL, 7744 bytes) 
+24/04/22 16:58:26 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+24/04/22 16:58:26 INFO PythonRunner: Times: total = 326, boot = 273, init = 53, finish = 0
+24/04/22 16:58:26 INFO PythonRunner: Times: total = 55, boot = 2, init = 52, finish = 1
+24/04/22 16:58:26 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1594 bytes result sent to driver
+24/04/22 16:58:26 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (10.209.31.71.local.ull.es, executor driver, partition 1, PROCESS_LOCAL, 7744 bytes) 
+24/04/22 16:58:26 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+24/04/22 16:58:26 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 568 ms on 10.209.31.71.local.ull.es (executor driver) (1/2)
+24/04/22 16:58:26 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 46445
+24/04/22 16:58:26 INFO PythonRunner: Times: total = 45, boot = -185, init = 230, finish = 0
+24/04/22 16:58:26 INFO PythonRunner: Times: total = 45, boot = -183, init = 228, finish = 0
+24/04/22 16:58:26 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 1508 bytes result sent to driver
+24/04/22 16:58:26 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 70 ms on 10.209.31.71.local.ull.es (executor driver) (2/2)
+24/04/22 16:58:26 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+24/04/22 16:58:26 INFO DAGScheduler: ShuffleMapStage 0 (join at /home/alumnos.ull.es/c2/alu0101056944/datos/Disco_Duro_Virtual/private/EscritorioESIT/EjemplosSpark01/ej07_join.py:11) finished in 0,732 s
+24/04/22 16:58:26 INFO DAGScheduler: looking for newly runnable stages
+24/04/22 16:58:26 INFO DAGScheduler: running: Set()
+24/04/22 16:58:26 INFO DAGScheduler: waiting: Set(ResultStage 1)
+24/04/22 16:58:26 INFO DAGScheduler: failed: Set()
+24/04/22 16:58:26 INFO DAGScheduler: Submitting ResultStage 1 (PythonRDD[9] at collect at /home/alumnos.ull.es/c2/alu0101056944/datos/Disco_Duro_Virtual/private/EscritorioESIT/EjemplosSpark01/ej07_join.py:12), which has no missing parents
+24/04/22 16:58:26 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 12.1 KiB, free 434.4 MiB)
+24/04/22 16:58:26 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 7.0 KiB, free 434.4 MiB)
+24/04/22 16:58:26 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.209.31.71.local.ull.es:40217 (size: 7.0 KiB, free: 434.4 MiB)
+24/04/22 16:58:26 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+24/04/22 16:58:26 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 1 (PythonRDD[9] at collect at /home/alumnos.ull.es/c2/alu0101056944/datos/Disco_Duro_Virtual/private/EscritorioESIT/EjemplosSpark01/ej07_join.py:12) (first 15 tasks are for partitions Vector(0, 1))
+24/04/22 16:58:26 INFO TaskSchedulerImpl: Adding task set 1.0 with 2 tasks resource profile 0
+24/04/22 16:58:26 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2) (10.209.31.71.local.ull.es, executor driver, partition 0, NODE_LOCAL, 7433 bytes) 
+24/04/22 16:58:26 INFO Executor: Running task 0.0 in stage 1.0 (TID 2)
+24/04/22 16:58:26 INFO ShuffleBlockFetcherIterator: Getting 2 (176.0 B) non-empty blocks including 2 (176.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+24/04/22 16:58:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 6 ms
+24/04/22 16:58:26 INFO PythonRunner: Times: total = 43, boot = -62, init = 105, finish = 0
+24/04/22 16:58:26 INFO Executor: Finished task 0.0 in stage 1.0 (TID 2). 2069 bytes result sent to driver
+24/04/22 16:58:26 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3) (10.209.31.71.local.ull.es, executor driver, partition 1, NODE_LOCAL, 7433 bytes) 
+24/04/22 16:58:26 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 88 ms on 10.209.31.71.local.ull.es (executor driver) (1/2)
+24/04/22 16:58:26 INFO Executor: Running task 1.0 in stage 1.0 (TID 3)
+24/04/22 16:58:26 INFO ShuffleBlockFetcherIterator: Getting 2 (176.0 B) non-empty blocks including 2 (176.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+24/04/22 16:58:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+24/04/22 16:58:27 INFO PythonRunner: Times: total = 42, boot = -118, init = 160, finish = 0
+24/04/22 16:58:27 INFO Executor: Finished task 1.0 in stage 1.0 (TID 3). 2068 bytes result sent to driver
+24/04/22 16:58:27 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 55 ms on 10.209.31.71.local.ull.es (executor driver) (2/2)
+24/04/22 16:58:27 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+24/04/22 16:58:27 INFO DAGScheduler: ResultStage 1 (collect at /home/alumnos.ull.es/c2/alu0101056944/datos/Disco_Duro_Virtual/private/EscritorioESIT/EjemplosSpark01/ej07_join.py:12) finished in 0,152 s
+24/04/22 16:58:27 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+24/04/22 16:58:27 INFO TaskSchedulerImpl: Killing all running tasks in stage 1: Stage finished
+24/04/22 16:58:27 INFO DAGScheduler: Job 0 finished: collect at /home/alumnos.ull.es/c2/alu0101056944/datos/Disco_Duro_Virtual/private/EscritorioESIT/EjemplosSpark01/ej07_join.py:12, took 0,924798 s
+24/04/22 16:58:27 INFO SparkContext: Invoking stop() from shutdown hook
+24/04/22 16:58:27 INFO SparkContext: SparkContext is stopping with exitCode 0.
+24/04/22 16:58:27 INFO SparkUI: Stopped Spark web UI at http://10.209.31.71.local.ull.es:4040
+24/04/22 16:58:27 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/04/22 16:58:27 INFO MemoryStore: MemoryStore cleared
+24/04/22 16:58:27 INFO BlockManager: BlockManager stopped
+24/04/22 16:58:27 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/04/22 16:58:27 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/04/22 16:58:27 INFO SparkContext: Successfully stopped SparkContext
+24/04/22 16:58:27 INFO ShutdownHookManager: Shutdown hook called
+24/04/22 16:58:27 INFO ShutdownHookManager: Deleting directory /tmp/spark-ecd986c5-0710-41ea-a14a-a13d73fb48c4/pyspark-3766df4a-e70c-4433-bf4a-d3d24d698930
+24/04/22 16:58:27 INFO ShutdownHookManager: Deleting directory /tmp/spark-ecd986c5-0710-41ea-a14a-a13d73fb48c4
+24/04/22 16:58:27 INFO ShutdownHookManager: Deleting directory /tmp/spark-55760cca-0294-4c4d-9dff-3c88cca4d37c
